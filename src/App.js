@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import React from "react";
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Projects from './components/Projects';
+
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import Home from "./components/Header";
+import ContactForm from "./components/Contact";
+import Project from "./components/Project";
+import Skills from "./components/Skills";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div>
+      <Navigation />
+      <main>
+        <Switch>
+        <Route path="/skills" component={Skills}/>
+        <Route path="/contact" component={ContactForm}/>
+         <Route path="/projects" component={Projects}/>
+         <Route path="/" component={Home}/>
+         </Switch>
+      </main>
+      <Footer />
     </div>
+    </Router>
   );
 }
 
