@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.jumbotron {
+  background-image: url('../src/assets/images/Screenshot_20221021_044536.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.jumbotron .col {
+  margin: auto;
+  
+}
+.container p{
+  padding-bottom:15px;
+}
+.container .card{
+  padding-bottom:15px;
+}
+
+.nav-tabs .nav-link {
+  color:#b40086;
+}
+form {
+  width: 90%;
+}
+
+.contact-form {
+  padding: 25px 5% 10px 5%;
+  /* margin: 0 350px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+button {
+  border-radius: 10px !important;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 0 15px 0;
+  padding: 1rem 1.5rem;
+  outline: none;
+  cursor: pointer;
+  color:#fff;
+  background-color:#b40086;
+  transition: background-color ease-in-out 0.5s, opacity;
+
+}
+
+button:hover {
+  background-color:#df93cc;
+  border-radius: 10px;
+}
+
+label {
+  margin-right: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  width:15%;
+}
+
+input {
+  width: 500px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid #eee;
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+.message-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+textarea {
+	width: 500px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+	padding: 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #b40086;
+  font-weight:400;
+}
+ span a{
+  color: #b40086;
+}
+footer {
+  background-color:#f2f2f2;
+  padding-bottom:30px;
+
+}
+footer p {
+  padding-top:20px;
+}
+footer i {
+  padding-top:20px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

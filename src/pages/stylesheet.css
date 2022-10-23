@@ -1,0 +1,13 @@
+a {
+    color: rgb(74, 74, 78);
+}
+
+.card-body{
+    border-radius: 10px;
+}
+
+.card-title{
+background:#f2f2f2;
+padding:10px;
+border-radius: 10px;
+}
