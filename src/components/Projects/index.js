@@ -1,49 +1,128 @@
-import React from 'react';
-import Project from "../Projects";
-import Container from 'react-bootstrap/Container';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import React, { useState } from 'react';
+import Modal from '../Modal';
 
+const PhotoList = ({ category }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentPhoto, setCurrentPhoto] = useState();
 
-//project images
-import teamProfile from "../../assets/images/team-profile.jpg";
+  const [photos] = useState([
+    {
+      name: 'Grocery aisle',
+      category: 'front-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Grocery booth',
+      category: 'front-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Building exterior',
+      category: 'front-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Restaurant table',
+      category: 'front-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Cafe interior',
+      category: 'front-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+     {
+      name: 'Pancakes',
+      category: 'back-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Burrito',
+      category: 'back-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Scallop pasta',
+      category: 'back-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Burger',
+      category: 'back-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Fruit bowl',
+      category: 'back-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Green river',
+      category: 'back-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Docks',
+      category: 'back-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Panoramic village by sea',
+      category: 'back-end',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Domestic landscape',
+      category: 'full-stack',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Park bench',
+      category: 'full-stack',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    }
+  ]);
 
+  const currentPhotos = photos.filter(photo => photo.category === category);
 
-function Projects() {
-    const projects = [
-        {
-          "title": "Generate Team Profile",
-          "desc": "This project is a node.js application. It will take user inputs to generate a webpage of team members.",
-          "key": "team-profile",
-          "imageSrc": teamProfile,
-          "repository": "https://github.com/strossouw/Generate-Team-Profile"
-        },
+  const toggleModal = (image, i) => {
+    setCurrentPhoto({ ...image, index: i });
+    setIsModalOpen(!isModalOpen);
+  };
 
-    ]
-        return(
-          <div>
-       <Jumbotron fluid className="shadow p-5 mb-5">
-        <Container className="text-center">
-          <div className="p-md-5">
-            <h1>Projects </h1>
-            <h2>Deployed URL and Repositories </h2>
-          </div>
-        </Container>
-      </Jumbotron>
-       
-      <Container className="p-2 shadow">
-        <Row>
-                {projects.map((project) => {
-            return(
-              <Col s={12} lg={6} key={project.key}>
-                <Project project={project} />
-              </Col>
-            )
-          })}
-        </Row>
-        </Container>
-          </div>
-        )
-}
-export default Projects;
+  return (
+    <div>
+      {isModalOpen && (
+        <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
+      )}
+      <div className="flex-row">
+        {currentPhotos.map((image, i) => (
+          <img
+            src={require(`../../assets/small/${category}/${i}.jpg`).default}
+            alt={image.name}
+            className="img-thumbnail mx-1"
+            onClick={() => toggleModal(image, i)}
+            key={image.name}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default PhotoList;
