@@ -7,7 +7,7 @@ Live URL: https://blooming-woodland-08424.herokuapp.com/#/
 
 ##  Description
 This is a version of my professional portfolio created using React. 
-
+![image](https://user-images.githubusercontent.com/105831699/197681191-e2bd41f5-7f94-4b0d-97e9-76201c10e64a.png)
 
 ##  Table of Contents
 * [Technologies](#technologies)
@@ -32,7 +32,7 @@ There are multiple tabs to view my work and about me.
 ![image](https://user-images.githubusercontent.com/105831699/197681459-6feec81d-e7ce-4512-a225-cc619341573c.png)
 
 
-![image](https://user-images.githubusercontent.com/105831699/197681191-e2bd41f5-7f94-4b0d-97e9-76201c10e64a.png)
+
 
 
 ## License
