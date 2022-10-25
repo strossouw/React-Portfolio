@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
             <h1 className='name nav-brand'>
-                Stephanie Rossouw
+                Stephanie Rossouw 🐈🐈
             </h1>
          
             <div id="navbarSupportedContent">

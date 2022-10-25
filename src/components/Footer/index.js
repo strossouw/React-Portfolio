@@ -13,7 +13,7 @@ function Footer() {
             <Container>
                 <Row>
                     <Col sm={12} md={6} className="m-md-0">
-                    <p>Stephanie Rossouw 2022</p>
+                    <p>Stephanie Rossouw 🐈🐈  2022</p>
                     </Col>
                     <Col sm={12} md={6} className="d-flex justify-content-md-end justify-content-center">
                     <SocialIcons />
