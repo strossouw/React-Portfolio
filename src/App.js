@@ -16,6 +16,8 @@ import Home from "./components/Header";
 import ContactForm from "./components/Contact";
 import Skills from "./components/Skills";
 import About from "./components/About";
+import Resume from "./components/Resume";
+
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
         <Switch>
         <Route path="/about" component={About}/>
         <Route path="/skills" component={Skills}/>
+        <Route path="/Resume" component={Resume}/>
         <Route path="/contact" component={ContactForm}/>
          <Route path="/projects" component={Projects}/>
          <Route path="/" component={Home}/>

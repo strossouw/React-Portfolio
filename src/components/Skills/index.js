@@ -14,7 +14,7 @@ function Skills() {
         <Jumbotron fluid className="shadow p-5 mb-5">
         <Container className="text-center ">
           <div className="p-md-5">
-            <h1 style = {{ backgroundColor: "gray", color: "#800080" }}>Skills and Certificates</h1>
+            <h1 style = {{ backgroundColor: "gray", color: "#90ee90" }}>Skills and Certificates</h1>
           </div>
         </Container>
       </Jumbotron>

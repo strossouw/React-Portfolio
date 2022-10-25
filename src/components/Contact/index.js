@@ -38,9 +38,10 @@ function ContactForm() {
     <div>
     <Jumbotron fluid className="shadow p-5 mb-5">
     <Container className="text-center">
-      <div className="p-md-5">
-        <h1>Contact Me</h1>
-        
+      <div className="p-md-5 ">
+      <h1 style = {{ backgroundColor: "gray", color: "#90ee90" }}>
+              <span>Contact Me</span>
+            </h1>        
       </div>
     </Container>
     <Container className="text-center">

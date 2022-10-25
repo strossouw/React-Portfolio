@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
  //initialize the section state
  function Navigation(props) {
-  const tabs = ['About', 'Projects','Skills', 'Contact'];
+ 
 
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
                 Stephanie Rossouw
             </h1>
          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <Link class="nav-link active" to="/home">
@@ -33,6 +33,11 @@ import { Link } from "react-router-dom";
             <li class="nav-item">
               <Link class="nav-link active" to="/skills">
                 Skills
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link active" to="/resume">
+                Resume
               </Link>
             </li>
             <li class="nav-item">
