@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
                 Stephanie Rossouw 🐈🐈
             </h1>
          
-            <div id="navbarSupportedContent">
+            <div >
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <Link class="nav-link active" to="/home">

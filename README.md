@@ -22,6 +22,7 @@ If I had some installation instructions I would list those here.
 
 ## Usage
 The sole purpose of this portfolio is to show off what I can do. :) 🐈
+There are multiple tabs to view my work and about me.
 
 
 ## License

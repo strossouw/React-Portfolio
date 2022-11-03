@@ -18,6 +18,14 @@ import sinato from '../assets/images/sinato.jpg';
 function Projects() {
     const projects = [
       {
+        "title": "bios-planner",
+        "desc": "This is a planner to help you plan your life ",
+        "key": "bios-planner",
+        "imageSrc":bios,
+        "repository": "https://github.com/oceanlatte/bios-planner",
+        "appURL": "https://biostodos.herokuapp.com/"
+      },
+      {
         "title": "Sinato",
         "desc": "This application is a social media site for music. Users can post about what song they're listening to and a caption on their thoughts. Others can add to the conversation by posting comments and using emojis. Made with Express servers and sessions, this is a great place for music lovers!",
         "key": "sinato",

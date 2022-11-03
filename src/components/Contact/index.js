@@ -47,7 +47,7 @@ function ContactForm() {
     <Container className="text-center">
 
     <form id="contact-form" onSubmit={handleSubmit}>
-        {""}
+
         <Row>
         <Col>
         <div>
