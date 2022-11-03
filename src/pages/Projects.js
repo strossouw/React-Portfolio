@@ -13,6 +13,7 @@ import teamDB from '../assets/images/teamDB.jpg';
 import MVC from '../assets/images/MVC.jpg';
 import quiz from '../assets/images/quiz.jpg';
 import sinato from '../assets/images/sinato.jpg';
+import bios from '../assets/images/bios.jpg'
 
 
 function Projects() {
@@ -21,7 +22,7 @@ function Projects() {
         "title": "bios-planner",
         "desc": "This is a planner to help you plan your life ",
         "key": "bios-planner",
-        "imageSrc":bios,
+        "imageSrc": bios,
         "repository": "https://github.com/oceanlatte/bios-planner",
         "appURL": "https://biostodos.herokuapp.com/"
       },
@@ -29,7 +30,7 @@ function Projects() {
         "title": "Sinato",
         "desc": "This application is a social media site for music. Users can post about what song they're listening to and a caption on their thoughts. Others can add to the conversation by posting comments and using emojis. Made with Express servers and sessions, this is a great place for music lovers!",
         "key": "sinato",
-        "imageSrc":sinato,
+        "imageSrc": sinato,
         "repository": "https://github.com/strossouw/sinato",
         "appURL": "https://sinato.herokuapp.com/"
       },     
