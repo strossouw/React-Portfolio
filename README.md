@@ -23,10 +23,10 @@ A react template was used to start this project. Within that template additional
 If I had some installation instructions I would list those here. 
 
 ## Usage
+
 The sole purpose of this portfolio is to show off what I can do. :) 🐈
 There are multiple tabs to view my work and about me.
-<<<<<<< HEAD
-=======
+
 
 ![image](https://user-images.githubusercontent.com/105831699/197681387-e1b3aecf-a65e-4ac4-a669-3e6ced9808ef.png)
 
